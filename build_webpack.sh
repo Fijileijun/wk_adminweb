@@ -43,7 +43,7 @@ function output() {
 }
 
 echo "execute npm install"
-npm --registry=http://nexus.mwbyd.cn/nexus/content/groups/npm-group/ install
+npm --registry=http://127.0.0.1:8081/nexus/content/groups/npm-group/ install
 
 sed -i "s/xxx/$ENV/g" service*.sh
 #create staic file
@@ -52,7 +52,7 @@ cp $NODE_MOUDULES_DIR/${NODE_MOUDULES_NAME}.tar.gz ./
 tar -zxf ${NODE_MOUDULES_NAME}.tar.gz
 check $? "tar node_module"
 
-npm --registry=http://nexus.mwbyd.cn/nexus/content/groups/npm-group/ install 2>&1 | tee npm.tmp
+npm --registry=http://127.0.0.1:8081/nexus/content/groups/npm-group/ install 2>&1 | tee npm.tmp
 output "npm"
 
 cd $PACKAGE_DIR
