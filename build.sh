@@ -20,7 +20,7 @@ function check() {
 }
 
 echo "execute npm install"
-npm --registry=http://127.0.0.1:8081/nexus/content/groups/npm-group/ install
+npm --registry=http://127.0.0.1:8081/repository/npm-public/ install
 
 if [ -d ./$BUILD_NAME ];then
     sed -i "s/xxx/$ENV/g" service*.sh

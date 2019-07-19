@@ -7,8 +7,10 @@ app_flag="WukongAdmin_$ENV"
 location=""
 if [ $ENV == 'aliyun_prod' || $ENV == 'aliyun_stg' ];then
    servername='cdn-webresource.mwee.cn'
-else
+elif [ $ENV == 'test' || $ENV == 'dev']; then
    servername='webresource.9now.net'
+else
+   servername='webresource.wk.localhost'
 fi
 
 function help() {

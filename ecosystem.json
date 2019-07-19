@@ -1,10 +1,10 @@
 {
     "apps": [
         {
-            "name":"WukongAdmin_test",
+            "name":"wkadminweb_test",
             "script": "./bin/www",
-            "error_file": "/var/log/node/pm2/web_wukongadmin_test.err.log",
-            "out_file": "/var/log/node/pm2/web_wukongadmin_test.out.log",
+            "error_file": "/var/log/node/pm2/wkadminweb_test.err.log",
+            "out_file": "/var/log/node/pm2/wkadminweb_test.out.log",
             "instances": 0,
             "max_memory_restart": "512M",
             "exec_mode": "cluster",
@@ -14,10 +14,10 @@
             }
         },
         {
-            "name":"WukongAdmin_dev",
+            "name":"wkadminweb_dev",
             "script": "./bin/www",
-            "error_file": "/var/log/node/pm2/web_wukongadmin_test.err.log",
-            "out_file": "/var/log/node/pm2/web_wukongadmin_test.out.log",
+            "error_file": "/var/log/node/pm2/wkadminweb_dev.err.log",
+            "out_file": "/var/log/node/pm2/wkadminweb_dev.out.log",
             "instances": 0,
             "max_memory_restart": "512M",
             "exec_mode": "cluster",
@@ -27,10 +27,10 @@
             }
         },
         {
-            "name":"WukongAdmin_aliyun_uat",
+            "name":"wkadminweb_aliyun_uat",
             "script": "./bin/www",
-            "error_file": "/var/log/node/pm2/web_wukongadmin_test.err.log",
-            "out_file": "/var/log/node/pm2/web_wukongadmin_test.out.log",
+            "error_file": "/var/log/node/pm2/wkadminweb_uat.err.log",
+            "out_file": "/var/log/node/pm2/wkadminweb_uat.out.log",
             "instances": 0,
             "max_memory_restart": "512M",
             "exec_mode": "cluster",
@@ -40,10 +40,10 @@
             }
         },
         {
-            "name":"WukongAdmin_aliyun_prod",
+            "name":"wkadminweb_aliyun_prod",
             "script": "./bin/www",
-            "error_file": "/var/log/node/pm2/web_wukongadmin.err.log",
-            "out_file": "/var/log/node/pm2/web_wukongadmin.out.log",
+            "error_file": "/var/log/node/pm2/wkadminweb.err.log",
+            "out_file": "/var/log/node/pm2/wkadminweb.out.log",
             "instances": 0,
             "max_memory_restart": "512M",
             "exec_mode" : "cluster",
@@ -53,15 +53,28 @@
             }
         },
         {
-            "name":"WukongAdmin_aliyun_stg",
+            "name":"wkadminweb_aliyun_stg",
             "script": "./bin/www",
-            "error_file": "/var/log/node/pm2/web_wukongadmin.err.log",
-            "out_file": "/var/log/node/pm2/web_wukongadmin.out.log",
+            "error_file": "/var/log/node/pm2/wkadminweb.err.log",
+            "out_file": "/var/log/node/pm2/wkadminweb.out.log",
             "instances": 0,
             "max_memory_restart": "512M",
             "exec_mode" : "cluster",
             "env": {
                 "NODE_ENV": "aliyun_stg",
+                "PORT":  "4001"
+            }
+        },
+        {
+            "name":"wkadminweb_local",
+            "script": "./bin/www",
+            "error_file": "./log/pm2/wkadminweb_local.err.log",
+            "out_file": "./log/pm2/wkadminweb_local.out.log",
+            "instances": 0,
+            "max_memory_restart": "512M",
+            "exec_mode" : "cluster",
+            "env": {
+                "NODE_ENV": "local",
                 "PORT":  "4001"
             }
         }
