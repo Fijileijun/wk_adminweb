@@ -68,4 +68,4 @@ mkdir $PROJECT_NAME
 mv * .[^.]* $PROJECT_NAME
 tar -czf  "$PROJECT_NAME".tar.gz  $PROJECT_NAME/
 check $? "tar project"
-echo "MW_SUCCESS"
+echo "SUCCESS"

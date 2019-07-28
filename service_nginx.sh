@@ -3,14 +3,14 @@
 source /etc/profile
 confdir="/etc/nginx/conf.d"
 ENV="xxx"
-app_flag="WukongAdmin_$ENV"
+app_flag="ngrAdmin_$ENV"
 location=""
 if [ $ENV == 'aliyun_prod' || $ENV == 'aliyun_stg' ];then
-   servername='cdn-webresource.mwee.cn'
+   servername='cdn-webresource.test.cn'
 elif [ $ENV == 'test' || $ENV == 'dev']; then
-   servername='webresource.9now.net'
+   servername='webresource.test.net'
 else
-   servername='webresource.wk.localhost'
+   servername='webresource.test.localhost'
 fi
 
 function help() {
@@ -32,7 +32,7 @@ function conf_check(){
                     exit 0
                 fi
                 echo "project updated"
-                echo "MW_SUCCESS"
+                echo "SUCCESS"
                 exit 0
         fi
 }
@@ -41,7 +41,7 @@ function conf_check(){
 #status=`curl -o /dev/null-I  -s -w '%{http_code}' http://localhost:$port`
 #    if [[ $status == 200 || $status == 302 ]];then
 #        echo "port:$port ok"
-#        echo "MW_SUCCESS"
+#        echo "SUCCESS"
 #        exit 0
 #    else
 #        echo "port:$port check error"
@@ -145,7 +145,7 @@ function reload(){
         else
             echo "nginx first started"
             ls -1 /data/application/$name/web/Public/static/build/ | tail -1
-            echo "MW_SUCCESS"
+            echo "SUCCESS"
         fi 
     else
         nginx -s reload
@@ -154,7 +154,7 @@ function reload(){
         else
             echo "nginx reloaded"
             ls -1 /data/application/$name/web/Public/static/build/ | tail -1
-            echo "MW_SUCCESS"
+            echo "SUCCESS"
         fi
     fi
 }
@@ -162,7 +162,7 @@ function reload(){
 function stop(){
     nginx -s stop
     echo "nginx stopped"
-    echo "MW_SUCCESS"
+    echo "SUCCESS"
 }
 
 #输入提示

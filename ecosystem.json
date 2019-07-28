@@ -1,10 +1,10 @@
 {
     "apps": [
         {
-            "name":"wkadminweb_test",
+            "name":"ngrAdmin_test",
             "script": "./bin/www",
-            "error_file": "/var/log/node/pm2/wkadminweb_test.err.log",
-            "out_file": "/var/log/node/pm2/wkadminweb_test.out.log",
+            "error_file": "/var/log/node/pm2/ngrAdmin_test.err.log",
+            "out_file": "/var/log/node/pm2/ngrAdmin_test.out.log",
             "instances": 0,
             "max_memory_restart": "512M",
             "exec_mode": "cluster",
@@ -14,10 +14,10 @@
             }
         },
         {
-            "name":"wkadminweb_dev",
+            "name":"ngrAdmin_dev",
             "script": "./bin/www",
-            "error_file": "/var/log/node/pm2/wkadminweb_dev.err.log",
-            "out_file": "/var/log/node/pm2/wkadminweb_dev.out.log",
+            "error_file": "/var/log/node/pm2/ngrAdmin_dev.err.log",
+            "out_file": "/var/log/node/pm2/ngrAdmin_dev.out.log",
             "instances": 0,
             "max_memory_restart": "512M",
             "exec_mode": "cluster",
@@ -27,10 +27,10 @@
             }
         },
         {
-            "name":"wkadminweb_aliyun_uat",
+            "name":"ngrAdmin_aliyun_uat",
             "script": "./bin/www",
-            "error_file": "/var/log/node/pm2/wkadminweb_uat.err.log",
-            "out_file": "/var/log/node/pm2/wkadminweb_uat.out.log",
+            "error_file": "/var/log/node/pm2/ngrAdmin_uat.err.log",
+            "out_file": "/var/log/node/pm2/ngrAdmin_uat.out.log",
             "instances": 0,
             "max_memory_restart": "512M",
             "exec_mode": "cluster",
@@ -40,10 +40,10 @@
             }
         },
         {
-            "name":"wkadminweb_aliyun_prod",
+            "name":"ngrAdmin_aliyun_prod",
             "script": "./bin/www",
-            "error_file": "/var/log/node/pm2/wkadminweb.err.log",
-            "out_file": "/var/log/node/pm2/wkadminweb.out.log",
+            "error_file": "/var/log/node/pm2/ngrAdmin.err.log",
+            "out_file": "/var/log/node/pm2/ngrAdmin.out.log",
             "instances": 0,
             "max_memory_restart": "512M",
             "exec_mode" : "cluster",
@@ -53,10 +53,10 @@
             }
         },
         {
-            "name":"wkadminweb_aliyun_stg",
+            "name":"ngrAdmin_aliyun_stg",
             "script": "./bin/www",
-            "error_file": "/var/log/node/pm2/wkadminweb.err.log",
-            "out_file": "/var/log/node/pm2/wkadminweb.out.log",
+            "error_file": "/var/log/node/pm2/ngrAdmin.err.log",
+            "out_file": "/var/log/node/pm2/ngrAdmin.out.log",
             "instances": 0,
             "max_memory_restart": "512M",
             "exec_mode" : "cluster",
@@ -66,10 +66,10 @@
             }
         },
         {
-            "name":"wkadminweb_local",
+            "name":"ngrAdmin_local",
             "script": "./bin/www",
-            "error_file": "./log/pm2/wkadminweb_local.err.log",
-            "out_file": "./log/pm2/wkadminweb_local.out.log",
+            "error_file": "./log/pm2/ngrAdmin_local.err.log",
+            "out_file": "./log/pm2/ngrAdmin_local.out.log",
             "instances": 0,
             "max_memory_restart": "512M",
             "exec_mode" : "cluster",

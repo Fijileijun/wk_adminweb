@@ -8,8 +8,8 @@ if [ ! $1 ];then
 fi
 
 ENV=$1
-echo "$ENV"
-PROJECT_NAME="WukongAdmin_$ENV"
+PROJECT_NAME="ngrAdmin_$ENV"
+echo "$PROJECT_NAME"
 BUILD_NAME="node_modules"
 
 function check() {
@@ -22,11 +22,11 @@ function check() {
 echo "execute npm install"
 npm --registry=http://127.0.0.1:8081/repository/npm-public/ install
 
-if [ -d ./$BUILD_NAME ];then
+if [ -d ./${BUILD_NAME} ];then
     sed -i "s/xxx/$ENV/g" service*.sh
-    mkdir $PROJECT_NAME
-    mv * $PROJECT_NAME
+    mkdir ${PROJECT_NAME}
+    mv * ${PROJECT_NAME}
     tar -czvf  "$PROJECT_NAME".tar.gz  $PROJECT_NAME/
     check $?
-    echo "MW_SUCCESS"
+    echo "build SUCCESS"
 fi
