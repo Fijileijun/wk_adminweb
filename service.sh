@@ -2,6 +2,7 @@
 #!/bin/bash
 source /etc/profile
 
+# app_name要与你项目名称一致
 APP_NAME="ngrAdmin"
 ENV="xxx"
 SERVICE="${APP_NAME}_${ENV}"
