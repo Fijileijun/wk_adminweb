@@ -9,8 +9,8 @@ fi
 
 ENV=$1
 echo "$ENV"
-PROJECT_NAME="WukongAdmin_$ENV"
-NODE_MOUDULES_NAME="WukongAdmin_node_modules"
+PROJECT_NAME="ngrAdminWeb_$ENV"
+NODE_MOUDULES_NAME="ngrAdminWeb_node_modules"
 
 PACKAGE_DIR='/web/Public/static/'
 NODE_MOUDULES_DIR=/opt/auto/webresource/node_modules

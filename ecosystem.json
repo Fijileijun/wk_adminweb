@@ -1,7 +1,7 @@
 {
     "apps": [
         {
-            "name":"ngrAdmin_test",
+            "name":"ngrAdminWeb_test",
             "script": "./bin/www",
             "error_file": "/var/log/node/pm2/ngrAdmin_test.err.log",
             "out_file": "/var/log/node/pm2/ngrAdmin_test.out.log",
@@ -14,7 +14,7 @@
             }
         },
         {
-            "name":"ngrAdmin_dev",
+            "name":"ngrAdminWeb_dev",
             "script": "./bin/www",
             "error_file": "/var/log/node/pm2/ngrAdmin_dev.err.log",
             "out_file": "/var/log/node/pm2/ngrAdmin_dev.out.log",
@@ -27,7 +27,7 @@
             }
         },
         {
-            "name":"ngrAdmin_aliyun_uat",
+            "name":"ngrAdminWeb_aliyun_uat",
             "script": "./bin/www",
             "error_file": "/var/log/node/pm2/ngrAdmin_uat.err.log",
             "out_file": "/var/log/node/pm2/ngrAdmin_uat.out.log",
@@ -40,7 +40,7 @@
             }
         },
         {
-            "name":"ngrAdmin_aliyun_prod",
+            "name":"ngrAdminWeb_aliyun_prod",
             "script": "./bin/www",
             "error_file": "/var/log/node/pm2/ngrAdmin.err.log",
             "out_file": "/var/log/node/pm2/ngrAdmin.out.log",
@@ -53,7 +53,7 @@
             }
         },
         {
-            "name":"ngrAdmin_aliyun_stg",
+            "name":"ngrAdminWeb_aliyun_stg",
             "script": "./bin/www",
             "error_file": "/var/log/node/pm2/ngrAdmin.err.log",
             "out_file": "/var/log/node/pm2/ngrAdmin.out.log",
@@ -66,7 +66,7 @@
             }
         },
         {
-            "name":"ngrAdmin_local",
+            "name":"ngrAdminWeb_local",
             "script": "./bin/www",
             "error_file": "./log/pm2/ngrAdmin_local.err.log",
             "out_file": "./log/pm2/ngrAdmin_local.out.log",

@@ -2,5 +2,5 @@
     "ENV": "test",
     "basepath": "",
     "restfulapi": "http://api.gateway.test.cn/",
-    "webresourcePDBaseUrl": "//admin.gateway.test.cn/wukongwebresource/"
+    "webresourcePDBaseUrl": "//admin.gateway.test.cn/ngrAminWebresource/"
 }
