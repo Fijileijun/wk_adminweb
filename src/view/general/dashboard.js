@@ -213,7 +213,7 @@ class Dashboard extends BaseView {
         return listData.map((item,idx)=>{
             return {
                 service_name:item.service_name || '',
-                wukong_version:item.wukong_version || '',
+                ngr_version:item.ngr_version || '',
                 nginx_version:item.nginx_version || '',
                 ngx_lua_version:item.ngx_lua_version,
                 error_log_level:item.error_log_level,
