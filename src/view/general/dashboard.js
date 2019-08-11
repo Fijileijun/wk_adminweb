@@ -37,7 +37,7 @@ class Dashboard extends BaseView {
                 },
                 {
                   title: 'NgRouter版本',
-                  dataIndex: 'wukong_version',
+                  dataIndex: 'ngr_version',
                   align:'center'
                 },{
                   title: 'NGINX版本',
@@ -230,8 +230,8 @@ class Dashboard extends BaseView {
         return listData.map((item,idx)=>{
             return {
                 service_name:item.service_name || '',
-                total_count:item.total_count || '',
-                total_success_count:item.total_success_count || '',
+                total_count:item.total_count,
+                total_success_count:item.total_success_count,
                 traffic_write:item.traffic_write,
                 traffic_read:item.traffic_read,
                 request_2xx:item.request_2xx,
