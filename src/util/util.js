@@ -48,10 +48,26 @@ function formatObj(obj){
 
 }
 
+function parseQuery(queryStr) {
+    var query = {};
+    var idx = queryStr.lastIndexOf("?");
+    var str = queryStr.substr(idx + 1);
+    if(str == "" || idx == -1) {
+        return {};
+    }
+    var pairs = str.split('&');
+    for (var i = 0; i < pairs.length; i++) {
+        var pair = pairs[i].split('=');
+        query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
+    }
+    return query;
+}
+
 export {
 	getHttpAuth,
 	gotoPage,
-	formatObj
+	formatObj,
+	parseQuery
 }
 
 

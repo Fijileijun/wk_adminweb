@@ -1196,7 +1196,7 @@ class RouteGroup extends BaseView {
     fetchAllApiGroup(){
         let self = this;
 
-        const host_id = this.props.location.query.host_id;
+        const host_id = this.urlQuery.host_id;
 
         let param={}
 

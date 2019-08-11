@@ -5,6 +5,8 @@ import { Layout, Avatar } from 'antd'
 import 'antd/dist/antd.min.css'; 
 import '../common/less/private.less';
 
+import { parseQuery } from '../util/util';
+
 import SideMenu from '../ui/sidermenu'
 import Nav from "./nav"
 
@@ -15,6 +17,8 @@ class BaseView extends Component {
     constructor(props) {
 
         super(props);
+
+        this.urlQuery = parseQuery(window.location.search);
 
         this.state = {
             pluginStatus: {}

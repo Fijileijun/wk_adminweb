@@ -872,7 +872,7 @@ class GrayDivide extends BaseView {
     fetchAllTableData(){
         let self = this;
 
-        const group_id = this.props.location.query.group_id;
+        const group_id = this.urlQuery.group_id;
 
         let param={};
 
