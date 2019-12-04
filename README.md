@@ -15,7 +15,7 @@ npm run start
 npm run build
 ```
 
-###  config/index，目前提供制定restfulapi的功能，可以根据不同环境，制定不同的api域名和端口
+### 在config/index.js中，根据不同环境，提供不同的NgrAdmin API域名和端口
 
 ```
 
@@ -53,8 +53,7 @@ module.exports = {
 ###  提供在服务器上pm2启动项目的功能
 
 ```
-1.修改业务代码
-2.配置生产restfulapi。配置一次即可。
+1. 修改config/index, 配置生产restfulapi。配置一次即可。
     var path = require('path')
     const NODE_ENV = process.env.NODE_ENV
 
@@ -82,13 +81,17 @@ module.exports = {
         noInfo: true
       },
     }
-3.本地打包编译。
+2. 本地打包编译。
     npm run build
-4.推送代码到远程仓库
+    
+3. 推送代码到远程仓库
     git push origin xxx
-5.服务器用pm2起node服务
+    
+4. 服务器用pm2起node服务
     npm run pm2_start
-6.服务器ip+端口访问，如有需要自行配置ngnix做域名解析
+    
+5. 服务器ip+端口访问，如有需要自行配置ngnix做域名解析
+
 ```
 
 
