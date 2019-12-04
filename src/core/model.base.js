@@ -29,7 +29,7 @@ class BaseModel {
 
         this.headers = {
 
-            // Authorization:'Basic' + Base64.encode('admin:wukong_admin')
+            // Authorization:'Basic' + Base64.encode('admin:ngr_admin')
 
         };
 

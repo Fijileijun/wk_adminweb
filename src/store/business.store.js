@@ -8,7 +8,7 @@ export class UserInfoStore extends BaseStore {
 		super(props);
 
 		// 缓存数据标志
-		this.key = '__wukong_user_info__';
+		this.key = '__ngr_user_info__';
 
 		// 缓存时间,支持单位 天-"D", 时-"H", 分钟-"M"
 		// 如 "30D", "0.5H"
@@ -24,7 +24,7 @@ export class HttpAuthInfoStore extends BaseStore {
 		super(props);
 
 		// 缓存数据标志
-		this.key = '__wukong_http_auth__';
+		this.key = '__ngr_http_auth__';
 
 		// 缓存时间,支持单位 天-"D", 时-"H", 分钟-"M"
 		// 如 "30D", "0.5H"
@@ -39,7 +39,7 @@ export class PluginInfoStore extends BaseStore {
 		super(props);
 
 		// 缓存数据标志
-		this.key = '__wukong_plugin_info__';
+		this.key = '__ngr_plugin_info__';
 
 		// 缓存时间,支持单位 天-"D", 时-"H", 分钟-"M"
 		// 如 "30D", "0.5H"
