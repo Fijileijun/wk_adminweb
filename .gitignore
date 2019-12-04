@@ -3,3 +3,7 @@ npm-debug.log
 .DS_Store
 package-lock.json
 .idea/
+/nohup.out
+log/
+dist/static/
+

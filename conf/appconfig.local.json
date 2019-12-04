@@ -1,6 +1,0 @@
-{
-    "ENV": "local",
-    "basepath": "",
-    "restfulapi": "//127.0.0.1:7777/",
-    "webresourcePDBaseUrl": "//localhost:8080/build/"
-}
